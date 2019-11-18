@@ -1,10 +1,10 @@
-all: proba
+all: main
 
-proba: proba.o
-	gcc -o proba proba.o
+main: main.o
+	gcc -o main main.o
 
-proba.o: proba.c
-	gcc -c proba.c 
+main.o: main.c
+	gcc -c main.c
 
 clean:
-	rm proba.o proba
+	rm main main.o
